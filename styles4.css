@@ -1,0 +1,292 @@
+
+@font-face {
+    font-family: calibri;
+    src: url(Calibri.ttf);
+}
+
+@font-face {
+    font-family: hack;
+    src: url(Hack.ttf);
+}
+
+body {
+    font-family: calibri;
+    font-size: 19px;
+    white-space: normal;
+    background-color: #EEEEEE;
+}
+
+div.page {
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-color: black;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 0px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+button {
+    border: none;
+    padding: 0 5px;
+    margin: 0;
+    background-color: #EEEEEE;
+    border-radius: 4px;
+    height: 120%;
+}
+
+button:hover {
+    color: seagreen;
+}
+
+#index_header {
+    text-align: center;
+    color: black;
+    margin-right: 30px;
+    font-size: 40px;
+    border-style: solid;
+    padding: 10px;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+}
+
+.two-panels {
+    background-color: #EEEEEE;
+}
+
+div.two-panels {
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #EEEEEE;
+}
+
+div.tree-panel {
+    flex: 19vw;
+    margin-left: 1vw;
+    height: 100%;
+    overflow: auto;
+    border-right: 3px solid;
+    background-color: #EEEEEE;
+}
+
+div.page-panel {
+    flex: 80vw;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+div.page-panel iframe {
+    width: 100%;
+    border: 0px;
+    margin-top: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #EEEEEE;
+}
+
+
+.clear {
+    clear: both
+}
+
+/*******************************************************************************
+ * TREE INDEX
+ ******************************************************************************/
+
+div.tree {
+    font-size: 12px;
+    color: #202A2C;
+}
+
+/* fix for firefox */
+div.tree button {
+    background-color: whitesmoke;
+    font-size: 15px;
+    font-weight: bolder;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgba(193, 193, 193, 0.795);
+    margin-right: 5px;
+}
+
+div.tree a, div.tree a:visited {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+div.tree ul {
+    padding-inline-start: 30px;
+    list-style-type: none;
+    line-height: 0.3;
+
+}
+
+div.tree ul.outermost {
+    padding-inline-start: 0;
+}
+
+div.tree li {
+    padding-inline-start: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.tree li a {
+    width: 100%;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;   
+}
+
+div.tree li.leaf {
+    padding-inline-start: 10px;
+    line-height: .5;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #202A2C;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+.tree li:hover {
+    background: rgba(193, 193, 193, 0.795);
+}
+.tree li {
+    white-space: nowrap;
+}
+
+div.tree a.show, div.tree a.hide {
+    display: none;
+
+}
+
+.hide {
+    display: none;
+}
+
+/*******************************************************************************
+ * NODE PAGES
+ ******************************************************************************/
+
+/* TABLES */
+
+table {
+    /*border-collapse: collapse;*/
+    border-radius: 10px;
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(193, 193, 193);
+}
+
+
+th {
+    background-color: rgb(193, 193, 193);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+td {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 1px solid rgba(193, 193, 193, 0.795);
+    text-align: left;
+    border-radius: 5px;
+    border-top: none;
+    border-right: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+
+/* HEADINGS */
+
+div.page h1 {
+    display: none;
+}
+
+div.page h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:  rgba(193, 193, 193, 0.795);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border-width: 1px;
+
+}
+
+div.page h3 {
+    border-radius: 0 0 0 0px;
+    border-width: 1px;
+    border-style: solid;
+    width: 50%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    
+}
+
+/* CODE */
+
+div.page code, div.page pre {
+    font-family: 'hack';
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: 30px;
+    overflow-y:auto;
+    max-width: 90%;
+
+    background-color: rgba(193, 193, 193, 0.3);
+}
+
+
+div.page pre {
+    width: max-content;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* IMAGES */
+
+img {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 8px;  
+    border-color:rgba(193, 193, 193, 0.795); 
+    max-width: 90%;
+    margin-left: 25px;
+}
