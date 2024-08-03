@@ -2,6 +2,11 @@
 
 I created a new template for CherryTree HTML export with changing CSS and JS files into **res/** directory. You can easily copy and paste above files into **res/** directory and open **index.html** file via browser.
 
+## What is the CherryTree
+A hierarchical note taking application, featuring rich text and syntax highlighting, storing data in either a single file (xml or sqlite) or multiple files and directories.
+You can download it from https://www.giuspen.net/cherrytree/
+
+
 ## How to use
 1. Clone the repository
 ```bash
