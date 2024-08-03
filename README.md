@@ -1,4 +1,4 @@
-# Template for CherryTree HTML Export
+# CherryTree HTML Template
 
 I created a new template for CherryTree HTML export with changing CSS and JS files into **res/** directory. You can easily copy and paste above files into **res/** directory and open **index.html** file via browser.
 
